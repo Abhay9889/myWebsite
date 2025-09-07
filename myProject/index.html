@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Comprehensive HTML and JavaScript tutorials with interactive examples." />
+  <meta name="keywords" content="HTML, HTML5, JavaScript, web development, tutorials" />
+  <meta name="author" content="Krishna" />
+  <title>Krishna - HTML & JavaScript Tutorials</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    .sidebar {
+      width: 25%;
+      background: #e0e0e0;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+      padding: 5px 0;
+    }
+    .content {
+      width: 75%;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      margin-left: 20px;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    pre {
+      background: #f8f8f8;
+      padding: 10px;
+      border-radius: 5px;
+      position: relative;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #28a745;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    .copy-btn:hover {
+      background: #218838;
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background: #333;
+      color: #fff;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 3px;
+      margin: 5px 0;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🌐 Krishna - Learn HTML & JavaScript</h1>
+    <nav>
+      <a href="#html">HTML</a>
+      <a href="#javascript">JavaScript</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Topics</h2>
+      <ul>
+        <li><a href="#intro">HTML - Introduction</a></li>
+        <li><a href="#structure">HTML - Structure</a></li>
+        <li><a href="#tags">HTML - Tags</a></li>
+        <li><a href="#forms">HTML - Forms</a></li>
+        <li><a href="#tables">HTML - Tables</a></li>
+        <li><a href="#media">HTML - Media</a></li>
+        <li><a href="#semantic">HTML - Semantic</a></li>
+        <li><a href="#metadata">HTML - Metadata</a></li>
+        <li><a href="#lists">HTML - Lists</a></li>
+        <li><a href="#iframes">HTML - Iframes</a></li>
+        <li><a href="#canvas">HTML - Canvas</a></li>
+        <li><a href="#svg">HTML - SVG</a></li>
+        <li><a href="#accessibility">HTML - Accessibility</a></li>
+        <li><a href="#links">HTML - Links & Navigation</a></li>
+        <li><a href="#input-types">HTML - Input Types</a></li>
+        <li><a href="#attributes">HTML - Global Attributes</a></li>
+        <li><a href="#html5-apis">HTML - HTML5 APIs</a></li>
+        <li><a href="#data-attributes">HTML - Data Attributes</a></li>
+        <li><a href="#meta-tags">HTML - Advanced Meta Tags</a></li>
+        <li><a href="#embeds">HTML - Embeds & Objects</a></li>
+        <li><a href="#js-intro">JS - Introduction</a></li>
+        <li><a href="#js-vars">JS - Variables</a></li>
+        <li><a href="#js-func">JS - Functions</a></li>
+        <li><a href="#js-dom">JS - DOM</a></li>
+        <li><a href="#js-events">JS - Events</a></li>
+        <li><a href="#js-objects">JS - Objects</a></li>
+      </ul>
+    </aside>
+
+    <!-- Content -->
+    <main class="content">
+      <!-- HTML Section -->
+      <section id="html">
+        <h2>HTML Tutorials</h2>
+        <p>Master HTML with comprehensive tutorials covering all aspects of web structure and interactivity.</p>
+      </section>
+
+      <section id="intro">
+        <h2>Introduction to HTML</h2>
+        <p>HTML (HyperText Markup Language) is the backbone of web development, defining the structure of webpages using tags and attributes.</p>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Welcome to HTML!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="structure">
+        <h2>HTML Structure</h2>
+        <p>Every HTML document follows a standard structure with DOCTYPE, html, head, and body elements.</p>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;&lt;h1&gt;Hello Krishna&lt;/h1&gt;&lt;/header&gt;
+    &lt;main&gt;&lt;p&gt;Main content&lt;/p&gt;&lt;/main&gt;
+    &lt;footer&gt;&lt;p&gt;Footer&lt;/p&gt;&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="tags">
+        <h2>Common HTML Tags</h2>
+        <p>HTML tags define various types of content, from headings to images.</p>
+        <pre>
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;Link&lt;/a&gt;
+&lt;img src="image.jpg" alt="Image"&gt;
+&lt;div&gt;Container&lt;/div&gt;
+&lt;span&gt;Inline text&lt;/span&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="forms">
+        <h2>HTML Forms</h2>
+        <p>Forms collect user input with various elements like text fields, buttons, and dropdowns.</p>
+        <pre>
+&lt;form action="/submit" method="POST"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+  &lt;select name="option"&gt;
+    &lt;option value="1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="2"&gt;Option 2&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="tables">
+        <h2>HTML Tables</h2>
+        <p>Tables organize data in a grid of rows and columns.</p>
+        <pre>
+&lt;table border="1"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Radha&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;Delhi&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Krishna&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;td&gt;Mumbai&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="media">
+        <h2>HTML Media</h2>
+        <p>Embed images, audio, and video to enhance webpages.</p>
+        <pre>
+&lt;img src="image.jpg" alt="Sample Image" width="200"&gt;
+&lt;audio controls&gt;
+  &lt;source src="music.mp3" type="audio/mpeg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;
+&lt;video controls width="300"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Your browser does not support the video element.
+&lt;/video&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="semantic">
+        <h2>Semantic HTML</h2>
+        <p>Semantic elements provide meaning to content, improving accessibility and SEO.</p>
+        <pre>
+&lt;header&gt;
+  &lt;h1&gt;Site Header&lt;/h1&gt;
+&lt;/header&gt;
+&lt;nav&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/nav&gt;
+&lt;main&gt;&lt;article&gt;Main Article&lt;/article&gt;&lt;/main&gt;
+&lt;aside&gt;Sidebar Content&lt;/aside&gt;
+&lt;footer&gt;Site Footer&lt;/footer&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="metadata">
+        <h2>HTML Metadata</h2>
+        <p>Metadata in the head section provides information about the document.</p>
+        <pre>
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;meta name="description" content="Learn HTML and JavaScript"&gt;
+  &lt;meta name="keywords" content="HTML, JavaScript, tutorials"&gt;
+  &lt;meta name="author" content="Krishna"&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="lists">
+        <h2>HTML Lists</h2>
+        <p>Lists can be unordered, ordered, or description-based for organizing content.</p>
+        <pre>
+&lt;ul&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol type="1"&gt;
+  &lt;li&gt;First Step&lt;/li&gt;
+  &lt;li&gt;Second Step&lt;/li&gt;
+&lt;/ol&gt;
+&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="iframes">
+        <h2>HTML Iframes</h2>
+        <p>Iframes embed external content or other webpages within a page.</p>
+        <pre>
+&lt;iframe src="https://example.com" width="600" height="400" title="Example Website" frameborder="0"&gt;
+  Your browser does not support iframes.
+&lt;/iframe&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="canvas">
+        <h2>HTML Canvas</h2>
+        <p>The canvas element allows dynamic, scriptable rendering of 2D shapes and bitmap images.</p>
+        <pre>
+&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
+&lt;script&gt;
+  let canvas = document.getElementById("myCanvas");
+  let ctx = canvas.getContext("2d");
+  ctx.fillStyle = "blue";
+  ctx.fillRect(20, 20, 50, 50);
+  ctx.strokeStyle = "black";
+  ctx.strokeRect(80, 20, 50, 50);
+&lt;/script&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="svg">
+        <h2>HTML SVG</h2>
+        <p>Scalable Vector Graphics (SVG) create vector-based graphics that scale without losing quality.</p>
+        <pre>
+&lt;svg width="100" height="100"&gt;
+  &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red" /&gt;
+  &lt;rect x="10" y="10" width="30" height="30" fill="blue" /&gt;
+&lt;/svg&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="accessibility">
+        <h2>HTML Accessibility</h2>
+        <p>Accessibility ensures webpages are usable by everyone, including those with disabilities.</p>
+        <pre>
+&lt;img src="image.jpg" alt="A scenic mountain view"&gt;
+&lt;label for="inputId"&gt;Username:&lt;/label&gt;
+&lt;input id="inputId" type="text" aria-required="true"&gt;
+&lt;button aria-label="Close window"&gt;X&lt;/button&gt;
+&lt;a href="#main" class="skip-link"&gt;Skip to main content&lt;/a&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="links">
+        <h2>Links & Navigation</h2>
+        <p>Links connect pages, resources, or sections within a page.</p>
+        <pre>
+&lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;Visit Example&lt;/a&gt;
+&lt;a href="#sectionId"&gt;Jump to Section&lt;/a&gt;
+&lt;a href="mailto:contact@example.com"&gt;Email Us&lt;/a&gt;
+&lt;a href="tel:+1234567890"&gt;Call Us&lt;/a&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="input-types">
+        <h2>HTML Input Types</h2>
+        <p>HTML5 provides various input types for different data collection needs.</p>
+        <pre>
+&lt;input type="text" placeholder="Enter name"&gt;
+&lt;input type="email" placeholder="Enter email"&gt;
+&lt;input type="password" placeholder="Enter password"&gt;
+&lt;input type="number" min="1" max="100"&gt;
+&lt;input type="checkbox" name="option" value="yes"&gt;
+&lt;input type="radio" name="group" value="option1"&gt;
+&lt;input type="file" accept="image/*"&gt;
+&lt;input type="date"&gt;
+&lt;input type="color"&gt;
+&lt;input type="range" min="0" max="100"&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="attributes">
+        <h2>Global Attributes</h2>
+        <p>Global attributes can be applied to any HTML element for added functionality.</p>
+        <pre>
+&lt;div id="uniqueId" class="styleClass" data-info="custom" title="Tooltip text" lang="en" dir="ltr"&gt;
+  Content
+&lt;/div&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="html5-apis">
+        <h2>HTML5 APIs</h2>
+        <p>HTML5 introduces APIs like Geolocation, Drag and Drop, and Web Storage.</p>
+        <pre>
+&lt;button onclick="getLocation()"&gt;Get Location&lt;/button&gt;
+&lt;div id="locationOutput"&gt;&lt;/div&gt;
+&lt;script&gt;
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    document.getElementById("locationOutput").innerHTML = "Geolocation not supported.";
+  }
+}
+function showPosition(position) {
+  document.getElementById("locationOutput").innerHTML = 
+    "Latitude: " + position.coords.latitude + 
+    "&lt;br&gt;Longitude: " + position.coords.longitude;
+}
+&lt;/script&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="data-attributes">
+        <h2>Data Attributes</h2>
+        <p>Custom data attributes store extra information on HTML elements.</p>
+        <pre>
+&lt;div id="product" data-id="123" data-category="electronics"&gt;Product Name&lt;/div&gt;
+&lt;script&gt;
+  let product = document.getElementById("product");
+  console.log(product.dataset.id); // 123
+  console.log(product.dataset.category); // electronics
+&lt;/script&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="meta-tags">
+        <h2>Advanced Meta Tags</h2>
+        <p>Advanced meta tags support social media, mobile, and SEO optimization.</p>
+        <pre>
+&lt;meta name="robots" content="index, follow"&gt;
+&lt;meta name="theme-color" content="#333"&gt;
+&lt;meta property="og:title" content="Krishna Tutorials"&gt;
+&lt;meta property="og:description" content="Learn HTML and JS"&gt;
+&lt;meta property="og:image" content="thumbnail.jpg"&gt;
+&lt;meta name="twitter:card" content="summary_large_image"&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="embeds">
+        <h2>Embeds & Objects</h2>
+        <p>Embed external content like PDFs or plugins using object and embed tags.</p>
+        <pre>
+&lt;embed src="document.pdf" width="600" height="400"&gt;
+&lt;object data="document.pdf" type="application/pdf" width="600" height="400"&gt;
+  &lt;p&gt;Your browser does not support PDFs.&lt;/p&gt;
+&lt;/object&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <!-- JavaScript Section -->
+      <section id="javascript">
+        <h2>JavaScript Tutorials</h2>
+        <p>JavaScript adds interactivity and dynamic behavior to webpages.</p>
+      </section>
+
+      <section id="js-intro">
+        <h2>Introduction to JS</h2>
+        <p>JavaScript is a versatile language for web interactivity.</p>
+        <pre>
+&lt;script&gt;
+  alert("Welcome to Krishna's Tutorials!");
+&lt;/script&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+      </section>
+
+      <section id="js-vars">
+        <h2>Variables</h2>
+        <p>Store data using let, const, or var.</p>
+        <pre>
+let name = "Krishna";
+const pi = 3.14;
+var age = 22;
+console.log(name, pi, age);
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+        <button onclick="showVarExample()">Run Example</button>
+        <p id="varOutput"></p>
+      </section>
+
+      <section id="js-func">
+        <h2>Functions</h2>
+        <p>Functions encapsulate reusable code blocks.</p>
+        <pre>
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+console.log(greet("Krishna"));
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+        <button onclick="showFuncExample()">Run Function</button>
+        <p id="funcOutput"></p>
+      </section>
+
+      <section id="js-dom">
+        <h2>DOM Manipulation</h2>
+        <p>Manipulate webpage content dynamically.</p>
+        <pre>
+let element = document.getElementById("demo");
+element.innerHTML = "Text Changed!";
+element.style.color = "blue";
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+        <p id="demo">Original Text</p>
+        <button onclick="changeText()">Change Text</button>
+      </section>
+
+      <section id="js-events">
+        <h2>Events</h2>
+        <p>Handle user interactions like clicks and keypresses.</p>
+        <pre>
+&lt;button onclick="alert('Button Clicked!')"&gt;Click Me&lt;/button&gt;
+&lt;input type="text" oninput="console.log(this.value)"&gt;
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+        <button onclick="alert('You clicked me!')">Try Event</button>
+      </section>
+
+      <section id="js-objects">
+        <h2>Objects</h2>
+        <p>Objects store related data and functionality.</p>
+        <pre>
+let student = {
+  name: "Radha",
+  age: 20,
+  course: "Web Development",
+  greet: function() { return "Hi, I'm " + this.name; }
+};
+console.log(student.greet());
+          <button class="copy-btn" onclick="copyCode(this)">Copy Code</button>
+        </pre>
+        <button onclick="showObject()">Show Object</button>
+        <p id="objOutput"></p>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer id="about">
+    <p>© 2025 Krishna - Learn HTML & JS</p>
+  </footer>
+
+  <script>
+    // Copy code functionality
+    function copyCode(button) {
+      const code = button.parentElement.textContent.replace("Copy Code", "").trim();
+      navigator.clipboard.writeText(code).then(() => {
+        button.textContent = "Copied!";
+        setTimeout(() => button.textContent = "Copy Code", 2000);
+      });
+    }
+
+    // JavaScript example functions
+    function showVarExample() {
+      let name = "Krishna";
+      const pi = 3.14;
+      var age = 22;
+      document.getElementById("varOutput").innerHTML = `Name: ${name}, Pi: ${pi}, Age: ${age}`;
+    }
+
+    function showFuncExample() {
+      function greet(name) {
+        return "Hello, " + name + "!";
+      }
+      document.getElementById("funcOutput").innerHTML = greet("Krishna");
+    }
+
+    function changeText() {
+      document.getElementById("demo").innerHTML = "Text Changed!";
+      document.getElementById("demo").style.color = "blue";
+    }
+
+    function showObject() {
+      let student = {
+        name: "Radha",
+        age: 20,
+        course: "Web Development",
+        greet: function() { return "Hi, I'm " + this.name; }
+      };
+      document.getElementById("objOutput").innerHTML = 
+        `Name: ${student.name}, Age: ${student.age}, Course: ${student.course}, Greeting: ${student.greet()}`;
+    }
+  </script>
